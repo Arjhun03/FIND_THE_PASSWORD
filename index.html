@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIND THE PASSWORD</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="icon" type="image/png" href="hacker.png" >
+    
+</head>
+<body>
+<center>
+    <H1>The Password Paradox</H1>
+    <div class="info">
+    <h5>You are a hacker trying to bypass a password. The password is a Number and you have found the first 7 Digits of the password, The last digit is missing.Try to find the password's final digit in minimum number of tries.and you have only 10 trys to find the password . For every incorrect password your points are reduced by one . </h5>
+</div>
+    <input type="text"  id="input" placeholder="Enter the last digit"> <br>
+    <h1></h1>
+    <button onclick="check()" ondblclick="answer()"  >ENTER</button>
+    <h3 id="result">RESULT</h3>
+    <h4 id="score">SCORE : 10 </h4> 
+    <H6 id="pass"></H6>
+    <h1 id="final"></h1>
+    <h6>To get the final digit double tap the ENTER button with empty input score.</h6>
+</center>
+    
+</body>
+</html>

@@ -1,0 +1,101 @@
+body {
+    font-family: 'Roboto Mono', monospace; 
+    background-color: #1e1e1e; 
+    color: #0f0; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    overflow: hidden; 
+}
+
+center {
+    background-color: rgba(30, 30, 30, 0.8); 
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.3); 
+    text-align: center;
+    width: 60%;
+    max-width: 800px; 
+}
+
+h1 {
+    color: #0f0;
+    margin-bottom: 20px;
+}
+
+.info {
+    color: #ddd;
+    margin-bottom: 20px;
+    text-align: justify;
+    width: 80%;
+}
+
+input[type="text"] {
+    background-color: #333; 
+    color: #0f0;
+    padding: 10px;
+    border: 1px solid #0f0; 
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 250px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.2); 
+}
+
+button {
+    background-color: #0f0; 
+    color: #1e1e1e;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Roboto Mono', monospace;
+    transition: background-color 0.3s ease; 
+}
+
+button:hover {
+    background-color: #0c0; 
+}
+
+#result, #score, #pass, #final {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #0f0;
+}
+
+#pass {
+    color: #00ff00; 
+}
+
+h6 {
+    color: #555; 
+    margin-top: 20px;
+}
+
+
+.glitch {
+    animation: glitch 1s infinite linear;
+}
+
+@keyframes glitch {
+    0% { transform: translate(0, 0); }
+    10% { transform: translate(-2px, 2px); }
+    20% { transform: translate(2px, -2px); }
+    30% { transform: translate(-1px, 1px); }
+    40% { transform: translate(1px, -1px); }
+    50% { transform: translate(0, 0); }
+    60% { transform: translate(-2px, -2px); }
+    70% { transform: translate(2px, 2px); }
+    80% { transform: translate(-1px, -1px); }
+    90% { transform: translate(1px, 1px); }
+    100% { transform: translate(0, 0); }
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
